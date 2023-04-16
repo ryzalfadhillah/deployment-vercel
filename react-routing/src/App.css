@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@400;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Roboto&display=swap');
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+body{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.bg-main{
+    background-color: #0D6EFD;
+}
+
+.bg-white{
+    background-color: #FFFFFF;
+}
+
+.text-main{
+    color: #0D6EFD;
+}
+
+.hero-img{
+    max-width: 70px;
+}
+
+.w-600{
+    width: 600px;
+}
+
+.w-45{
+    width: 45%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.border-main{
+    border: 1px solid #0D6EFD;
+}
+
+input[type="file"]::file-selector-button{
+    background-color: #0D6EFD;
+    color: #FFFFFF;
+    border: none;
+    height: 2.5rem;
+}
+
+input[type="file"]{
+    padding: 0;
+    height: 100%;
+}
+
+.form-select{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 4px;
+}
+
+h1{
+    font-size:31px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16.5px;
+    font-family: Roboto, "Helvetica Neue";
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header-left a{
+    color: rgba(33, 37, 41, 1);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header-right a{
+    padding: 12px 16px;
+    color: rgba(13, 110, 253, 1);
+    border-radius: 4px;
+}
+
+.header-right a:hover{
+    padding: 12px 16px;
+    background-color: rgba(13, 110, 253, 1);
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.header-right-active{
+    background-color:rgba(13, 110, 253, 1);
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.hero{
+    background-color: #37517E;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    font-family: Jost, sans-serif;
+}
+
+.hero-left h1{
+    font-size: 41px;
+}
+
+.hero-left p{
+    font-size:24px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.btnn{
+    padding:9px 28px;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    background-color: #37517E;
+    cursor: pointer;
+}
+
+.btn-actived{
+    background-color:#47B2E4;
+}
+
+.btn-active:hover{
+    background-color:#8dd4f5;
+}
+
+.newsletter{
+    text-align: center;
+    background-color: #F3F5FA;
+    padding: 44px;
+}
+.newsletter h4{
+    color:#37517E;
+    font-size: 24px;
+    font-family: Jost, sans-serif;
+}
+
+.newsletter p{
+    color: #444444;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+.newsletter input{
+    width: 516px;
+    height: 30.5px;
+    border: none;
+    border-radius: 50px;
+}
+
+.btn-newsletter{
+    margin-left: -80px;
+}
+
+.information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Jost, sans-serif;
+    font-size: 14px;
+    color: #5E5E5E;
+    padding: 80px;
+}
+
+.information-address h2{
+    font-size: 28px;
+    color: #37517E;
+}
+
+.information-address p{
+    margin-top: -20px;
+}
+
+.information h5{
+    color:#37517E;
+    font-size: 16px;
+}
+
+.information a{
+    display: block;
+    text-decoration: none;
+    color: #777777;
+    margin: 12px;
+}
+
+.information button{
+    width: 36px;
+height: 36px;
+color: #47B2E4;
+background-color: #47B2E4;
+border-radius: 18px;
+border: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #37517E;
+    padding: 15px;
+    font-family: 'Open Sans';
+    color: #ffffff;
+}
+
+footer a{
+    color: rgba(71, 178, 228, 1);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-right{
+        display: none;
+    }
+
+    .hero-right{
+        display: none;
+    }
+
+    .newsletter input{
+        width: 216px;
+    }
+
+    .information{
+        display: block;
+        text-align: center;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+    }
+}
